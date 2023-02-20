@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 00px;
+  margin-left: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #f0eeed;
+  background-color: #321f28;
+}
+
+/* Nav bar and button formating*/
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: absolute;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 10vw;
+  border-bottom: solid 4px #f0eeed;
+  background-color: #734046;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  border: solid 3px #f0eeed;
+  text-align: center;
+  text-decoration: none;
+  background-color: #a05344;
+  color: rgb(255, 255, 255);
+}
+
+nav a[aria-current='page'] {
+  color: #f0eeed;
+  background-color: #694040;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input[type='text'],
+textarea {
+  background-color: transparent;
+  border: solid 2px;
+  font-size: large;
+  padding-top: 0.4vh;
+}
+
+#taskName::placeholder {
+  color: #f0eeed;
+  font-style: italic;
+}
+
+.taskName {
+  width: 97%;
+  color: white;
+}
+textarea::placeholder {
+  color: white;
+  font-style: italic;
+}
+
+.taskDesc {
+  margin-top: auto;
+  padding-bottom: 1.7rem;
+  color: white;
+  width: 97%;
+  font-size: medium;
+  max-height: max-content;
+}
+
+/* General task d esign*/
+
+.tasks {
+  height: auto;
+  width: 100%;
+  border: solid 0.3rem #f0eeed;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  background-color: #a05344;
+  color: #f0eeed;
+  justify-content: center;
+}
