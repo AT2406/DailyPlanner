@@ -47,12 +47,19 @@ main {
   padding: 1rem;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+/* Centre all items like new task and task box*/
+
+/* General task design*/
+.tasks {
+  height: auto;
+  width: 80%;
+  border: solid 0.3rem #f0eeed;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  background-color: #a05344;
 }
 
-input[type='text'],
 textarea {
   background-color: transparent;
   border: solid 2px;
@@ -60,39 +67,37 @@ textarea {
   padding-top: 0.4vh;
 }
 
-#taskName::placeholder {
-  color: #f0eeed;
-  font-style: italic;
-}
-
-.taskName {
-  width: 97%;
-  color: white;
-}
 textarea::placeholder {
   color: white;
   font-style: italic;
 }
-
-.taskDesc {
-  margin-top: auto;
-  padding-bottom: 1.7rem;
+.taskName {
+  width: 75%;
   color: white;
-  width: 97%;
+  overflow: autoa;
+}
+.taskDesc {
+  margin-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  color: white;
+  width: 75%;
   font-size: medium;
   max-height: max-content;
 }
 
-/* General task d esign*/
+#progress {
+  min-height: 30px;
+  width: 50px;
+}
 
-.tasks {
-  height: auto;
-  width: 100%;
-  border: solid 0.3rem #f0eeed;
+#addNewTask {
   border-radius: 1rem;
-  padding-left: 1rem;
-  padding-top: 0.5rem;
-  background-color: #a05344;
-  color: #f0eeed;
-  justify-content: center;
+  min-height: 2.25rem;
+  /*Applies a horizontal translation to the centre*/
+  transform: translate(50%, 3vh);
+}
+
+#addNewTask:hover {
+  border-color: rgb(44, 44, 42);
+  background-color: rgb(203, 203, 203);
 }
