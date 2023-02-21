@@ -1,34 +1,30 @@
 * {
   box-sizing: border-box;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 00px;
-  margin-left: 0px;
+  margin: 0 auto;
 }
 
 body {
-  margin: 0;
   font-family: system-ui, sans-serif;
   color: #f0eeed;
   background-color: #321f28;
+  border: solid yellow;
 }
 
 /* Nav bar and button formating*/
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: absolute;
-  justify-content: center;
+  width: 100%;
   padding: 1.5rem;
-  gap: 10vw;
   border-bottom: solid 4px #f0eeed;
   background-color: #734046;
+  border: solid green;
+  text-align: center;
 }
 
 nav a {
+  margin-inline: 3.5vw;
   display: inline-block;
-  min-width: 9rem;
+  width: 9rem;
   padding: 0.5rem;
   border-radius: 0.8rem;
   border: solid 3px #f0eeed;
@@ -49,12 +45,10 @@ main {
 
 /* Centre all items like new task and task box*/
 .container {
-  position: ;
-  margin: auto;
+  margin: 0 auto;
   border: 2px solid greenyellow;
-  justify-content: center;
-  align-items: center;
-  width: 700px;
+  width: 100%;
+  min-height: 100%;
 }
 
 /* General task design*/
@@ -66,10 +60,11 @@ main {
   padding-left: 1rem;
   padding-top: 0.5rem;
   background-color: #a05344;
+  margin: 0 auto;
   margin-bottom: 1.3rem;
 }
 
-textarea {
+.tasks textarea {
   background-color: transparent;
   border: solid 2px;
   color: white;
@@ -78,29 +73,32 @@ textarea {
   margin: auto;
 }
 
-textarea::placeholder {
+.tasks textarea::placeholder {
   color: white;
   font-style: italic;
 }
 .taskName {
-  width: 335px;
+  width: 315px;
   font-size: large;
 }
 .taskDesc {
-  width: 335px;
+  width: 315px;
   font-size: medium;
 }
 
 #progress {
   min-height: 30px;
-  width: 50px;
-  display: flex;
+  transform: translateY(-1.8em);
+  width: 65px;
+  display: inline-block;
 }
 
 #addNewTask {
+  margin: 1.3rem auto;
   display: block;
   border-radius: 1rem;
   height: 2.25rem;
+  outline-color: transparent;
 }
 
 #addNewTask:hover {
