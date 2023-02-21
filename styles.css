@@ -54,7 +54,7 @@ main {
 /* General task design*/
 .tasks {
   height: auto;
-  width: 50vh;
+  width: 450px;
   border: solid 0.3rem #f0eeed;
   border-radius: 20px;
   padding-left: 1rem;
@@ -89,19 +89,39 @@ main {
 #progress {
   min-height: 30px;
   transform: translateY(-1.8em);
-  width: 65px;
+  width: 100px;
   display: inline-block;
 }
 
 #addNewTask {
   margin: 1.3rem auto;
   display: block;
-  border-radius: 1rem;
-  height: 2.25rem;
+  border-radius: 15px;
+  height: 2.35rem;
   outline-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 #addNewTask:hover {
-  border-color: rgb(44, 44, 42);
-  background-color: rgb(203, 203, 203);
+  border-color: rgb(255, 255, 0);
+  box-shadow: 1rem;
+}
+
+/* This is for the timer page */
+.timerBody {
+  border: solid red;
+  height: auto;
+}
+
+.timerButton {
+  display: inline-block;
+  width: 75px;
+  background-color: tomato;
+  margin: 1.3rem auto;
+  border-radius: 15px;
+  height: 2.35rem;
+  outline-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
 }
