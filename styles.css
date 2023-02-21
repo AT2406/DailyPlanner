@@ -44,27 +44,38 @@ nav a[aria-current='page'] {
 }
 
 main {
-  padding: 1rem;
+  padding: 1.3rem;
 }
 
 /* Centre all items like new task and task box*/
+.container {
+  position: ;
+  margin: auto;
+  border: 2px solid greenyellow;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+}
 
 /* General task design*/
 .tasks {
   height: auto;
-  width: 80%;
+  width: 50vh;
   border: solid 0.3rem #f0eeed;
-  border-radius: 1rem;
+  border-radius: 20px;
   padding-left: 1rem;
   padding-top: 0.5rem;
   background-color: #a05344;
+  margin-bottom: 1.3rem;
 }
 
 textarea {
   background-color: transparent;
   border: solid 2px;
-  font-size: large;
+  color: white;
   padding-top: 0.4vh;
+  padding-bottom: 0.3rem;
+  margin: auto;
 }
 
 textarea::placeholder {
@@ -72,29 +83,24 @@ textarea::placeholder {
   font-style: italic;
 }
 .taskName {
-  width: 75%;
-  color: white;
-  overflow: autoa;
+  width: 335px;
+  font-size: large;
 }
 .taskDesc {
-  margin-top: 0.2rem;
-  padding-bottom: 0.3rem;
-  color: white;
-  width: 75%;
+  width: 335px;
   font-size: medium;
-  max-height: max-content;
 }
 
 #progress {
   min-height: 30px;
   width: 50px;
+  display: flex;
 }
 
 #addNewTask {
+  display: block;
   border-radius: 1rem;
-  min-height: 2.25rem;
-  /*Applies a horizontal translation to the centre*/
-  transform: translate(50%, 3vh);
+  height: 2.25rem;
 }
 
 #addNewTask:hover {
