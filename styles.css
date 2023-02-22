@@ -87,14 +87,17 @@ main {
 }
 
 #progress {
-  min-height: 30px;
-  transform: translateY(-1.8em);
+  min-height: 45px;
+  transform: translateY(-1.4em);
   width: 100px;
-  display: inline-block;
+}
+
+.addButton {
+  border: solid red;
 }
 
 #addNewTask {
-  margin: 1.3rem auto;
+  margin: 1px auto;
   display: block;
   border-radius: 15px;
   height: 2.35rem;
@@ -124,4 +127,10 @@ main {
   outline-color: transparent;
   font-size: 14px;
   font-weight: 600;
+}
+
+#test {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
