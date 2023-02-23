@@ -26,12 +26,16 @@ function readInput() {
 }
 
 function addNewTaskBox() {
-  const divToDuplicate = document.getElementsByClassName("tasks");
-  
-  const addedTask = divToDuplicate.cloneNode(true);
-  // Function for loading previous values in array
-  // use on change for loading ^
-  // document create element div based on class id
-  //create new elements with matching classes to
-  //replicate tasks bpx
+  const divToDuplicate = document.getElementsByClassName('tasks');
+  const addedTask = divToDuplicate[0].cloneNode(true);
+  const button = document.getElementById('addNewTask');
+
+  addedTask.getElementsByClassName('taskName')[0].value = '';
+  addedTask.getElementsByClassName('taskDesc')[0].value = '';
+
+  addedTask.id = 'task' + ++n;
+  addedTask.getElementsByClassName('taskName')[0].id = 'task' + n + 'Name';
+  addedTask.getElementsByClassName('taskDesc')[0].id = 'task' + n + 'Desc';
+
+  button.parentNode.insertBefore(addedTask, button);
 }
