@@ -3,11 +3,19 @@
   margin: 0 auto;
 }
 
+:root {
+  /*toggle class change to change state and colour*/
+  --title: #b1b2beb2;
+  --body: linear-gradient(to left, rgb(145, 144, 144), rgb(70, 70, 70));
+  --task-unfinished: linear-gradient(to bottom, rgb(241, 200, 200), silver);
+  --task-completed: linear-gradient(to bottom, rgb(194, 247, 178), silver);
+}
+
 body {
   font-family: system-ui, sans-serif;
-  color: #f0eeed;
-  background-color: #321f28;
-  border: solid yellow;
+  color: #ffffff;
+  background-image: var(--body);
+  /* border: solid yellow; */
 }
 
 /* Nav bar and button formating*/
@@ -15,28 +23,25 @@ body {
 nav {
   width: 100%;
   padding: 1.5rem;
-  border-bottom: solid 4px #f0eeed;
-  background-color: #734046;
-  border: solid green;
+  /* background-color: #734046; */
+  /* border: solid green; */
   text-align: center;
 }
 
 nav a {
-  margin-inline: 3.5vw;
-  display: inline-block;
-  width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.8rem;
-  border: solid 3px #f0eeed;
-  text-align: center;
+  margin: auto;
+  width: 20rem;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  font-size: 60px;
   text-decoration: none;
-  background-color: #a05344;
-  color: rgb(255, 255, 255);
 }
 
 nav a[aria-current='page'] {
-  color: #f0eeed;
-  background-color: #694040;
+  color: #ffffff;
+  border: solid 0.01px rgb(41, 41, 41);
+  background-color: var(--title);
+  box-shadow: 0 5px 10px 3px rgb(0 0 0 / 0.2);
 }
 
 main {
@@ -46,26 +51,27 @@ main {
 /* Centre all items like new task and task box*/
 .container {
   margin: 0 auto;
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
   width: 100%;
-  min-height: 100%;
+  min-height: 88.8vh;
 }
 
 /* General task design*/
 .tasks {
   height: auto;
   width: 450px;
-  border: solid 0.3rem #f0eeed;
+  border: solid 0.01px rgb(182, 182, 182);
+  box-shadow: 0 5px 10px 3px rgb(0 0 0 / 0.2);
   border-radius: 20px;
   padding-left: 1rem;
   padding-top: 0.5rem;
-  background-color: #a05344;
+  background-image: var(--task-unfinished);
   margin: 0 auto;
   margin-bottom: 1.3rem;
 }
 
 .tasks textarea {
-  background-color: transparent;
+  background-color: inherit;
   border: solid 2px;
   color: white;
   padding-top: 0.4vh;
@@ -92,8 +98,11 @@ main {
   width: 100px;
 }
 
+#progress::before {
+}
+
 .addButton {
-  border: solid red;
+  /* border: solid red; */
 }
 
 #addNewTask {
@@ -109,28 +118,4 @@ main {
 #addNewTask:hover {
   border-color: rgb(255, 255, 0);
   box-shadow: 1rem;
-}
-
-/* This is for the timer page */
-.timerBody {
-  border: solid red;
-  height: auto;
-}
-
-.timerButton {
-  display: inline-block;
-  width: 75px;
-  background-color: tomato;
-  margin: 1.3rem auto;
-  border-radius: 15px;
-  height: 2.35rem;
-  outline-color: transparent;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-#test {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
 }
