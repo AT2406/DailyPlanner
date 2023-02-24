@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav>
-      <a href="/" aria-current="page">Daily Planner</a>
+      <a href="#" aria-current="page">Daily Planner</a>
     </nav>
     <main class="container">
       <div>
@@ -27,17 +27,13 @@
               placeholder="Task Description"
               rows="2"
             ></textarea>
-<!-- USE BUTTON TYPE MENU -->
             <span>
-              <input id="progress" type="radio" ></button>
+              <input id="progress" type="checkbox" ></button>
             </span>
-<!-- USE BUTTON TYPE MENU -->
           </div>
+          <span id="temp"></span>
           <div class="addButton">
-          
             <button type="button" id="addNewTask"  onclick="readInput()">Add New Task</button>
-
-            <!-- <p id="test"></p> -->
           </div>          
         </form>
       </div>
